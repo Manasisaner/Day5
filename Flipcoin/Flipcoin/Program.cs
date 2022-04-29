@@ -73,15 +73,43 @@
 
 /*swap two numbers*/
 
- class SwapExample
+// class SwapExample
+//{
+//    public static void Main(string[] args)
+//    {
+//        int a = 5, b = 10;
+//        Console.WriteLine("Before swap a= " + a + " b= " + b);
+//        a = a + b; //a=15 (5+10)      
+//        b = a - b; //b=5 (15-10)      
+//        a = a - b; //a=10 (15-5)   
+//        Console.WriteLine("After swap a= " + a + " b= " + b);
+//    }
+//}
+
+/*even odd no*/
+
+
+using System;
+
+namespace check1
 {
-    public static void Main(string[] args)
+    class Program
     {
-        int a = 5, b = 10;
-        Console.WriteLine("Before swap a= " + a + " b= " + b);
-        a = a + b; //a=15 (5+10)      
-        b = a - b; //b=5 (15-10)      
-        a = a - b; //a=10 (15-5)   
-        Console.WriteLine("After swap a= " + a + " b= " + b);
+        static void Main(string[] args)
+        {
+            int i;
+            Console.Write("Enter a Number : ");
+            i = int.Parse(Console.ReadLine());
+            if (i % 2 == 0)
+            {
+                Console.Write("Entered Number is an Even Number");
+                Console.Read();
+            }
+            else
+            {
+                Console.Write("Entered Number is an Odd Number");
+                Console.Read();
+            }
+        }
     }
 }
