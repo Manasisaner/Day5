@@ -34,19 +34,37 @@
 //    }
 //}
 //}using System;  
-namespace CheckLeapYear
-{
-    class Program
-    {
-        static void Main(string[] args)
+//namespace CheckLeapYear
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("Enter Year : ");
+//            int Year = int.Parse(Console.ReadLine());
+//            if (Year % 4 == 0) 
+//                Console.WriteLine("{0} is a Leap Year.", Year);
+//            else Console.WriteLine("{0} is not a Leap Year.", Year);
+//            Console.ReadLine();
+//        }
+//    }
+//}
+      namespace Quetient
+    { 
+        class Program
         {
-            Console.WriteLine("Enter Year : ");
-            int Year = int.Parse(Console.ReadLine());
-            if (Year % 4 == 0) 
-                Console.WriteLine("{0} is a Leap Year.", Year);
-            else Console.WriteLine("{0} is not a Leap Year.", Year);
-            Console.ReadLine();
-        }
+          static void Main(string[] args)
+    {
+
+        int dividend = 50,divisor = 8;
+
+        int quotient = dividend / divisor;
+        int remainder = dividend % divisor;
+
+        Console.WriteLine("Dividend:{0} Divisor:{1}", dividend, divisor);
+        Console.WriteLine("Quotient = " + quotient);
+        Console.WriteLine("Remainder = " + remainder);
+        Console.ReadLine();
     }
 }
-
+}
