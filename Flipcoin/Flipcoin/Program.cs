@@ -89,27 +89,51 @@
 /*even odd no*/
 
 
-using System;
+//using System;
 
-namespace check1
+//namespace check1
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            int i;
+//            Console.Write("Enter a Number : ");
+//            i = int.Parse(Console.ReadLine());
+//            if (i % 2 == 0)
+//            {
+//                Console.Write("Entered Number is an Even Number");
+//                Console.Read();
+//            }
+//            else
+//            {
+//                Console.Write("Entered Number is an Odd Number");
+//                Console.Read();
+//            }
+//        }
+//    }
+//}
+
+/*Check Whether an Alphabet is Vowel or Consonan*/
+
+using System;
+public class charpexercise
 {
-    class Program
-    {
-        static void Main(string[] args)
+    static void Main(string[]args)
+{
+        char ch;
+        Console.WriteLine("Enter any character: ");
+        ch = Convert.ToChar(Console.ReadLine());
+        // Condition for vowel checking
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
         {
-            int i;
-            Console.Write("Enter a Number : ");
-            i = int.Parse(Console.ReadLine());
-            if (i % 2 == 0)
-            {
-                Console.Write("Entered Number is an Even Number");
-                Console.Read();
-            }
-            else
-            {
-                Console.Write("Entered Number is an Odd Number");
-                Console.Read();
-            }
+            Console.WriteLine(ch + " is Vowel.");
         }
+        else if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+{
+            Console.WriteLine(ch + " is Consonant.");
+        }
+        Console.ReadLine();
     }
 }
+
