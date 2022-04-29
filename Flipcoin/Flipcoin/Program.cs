@@ -49,22 +49,39 @@
 //        }
 //    }
 //}
-      namespace Quetient
-    { 
-        class Program
-        {
-          static void Main(string[] args)
+//calculate quetient and reminder//
+
+//      namespace Quetient
+//    { 
+//        class Program
+//        {
+//          static void Main(string[] args)
+//    {
+
+//        int dividend = 50,divisor = 8;
+
+//        int quotient = dividend / divisor;
+//        int remainder = dividend % divisor;
+
+//        Console.WriteLine("Dividend:{0} Divisor:{1}", dividend, divisor);
+//        Console.WriteLine("Quotient = " + quotient);
+//        Console.WriteLine("Remainder = " + remainder);
+//        Console.ReadLine();
+//    }
+//}
+//}
+
+/*swap two numbers*/
+
+ class SwapExample
+{
+    public static void Main(string[] args)
     {
-
-        int dividend = 50,divisor = 8;
-
-        int quotient = dividend / divisor;
-        int remainder = dividend % divisor;
-
-        Console.WriteLine("Dividend:{0} Divisor:{1}", dividend, divisor);
-        Console.WriteLine("Quotient = " + quotient);
-        Console.WriteLine("Remainder = " + remainder);
-        Console.ReadLine();
+        int a = 5, b = 10;
+        Console.WriteLine("Before swap a= " + a + " b= " + b);
+        a = a + b; //a=15 (5+10)      
+        b = a - b; //b=5 (15-10)      
+        a = a - b; //a=10 (15-5)   
+        Console.WriteLine("After swap a= " + a + " b= " + b);
     }
-}
 }
