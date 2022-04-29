@@ -116,24 +116,69 @@
 
 /*Check Whether an Alphabet is Vowel or Consonan*/
 
-using System;
-public class charpexercise
+//using System;
+//public class charpexercise
+//{
+//    static void Main(string[]args)
+//{
+//        char ch;
+//        Console.WriteLine("Enter any character: ");
+//        ch = Convert.ToChar(Console.ReadLine());
+//        // Condition for vowel checking
+//        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+//        {
+//            Console.WriteLine(ch + " is Vowel.");
+//        }
+//        else if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+//{
+//            Console.WriteLine(ch + " is Consonant.");
+//        }
+//        Console.ReadLine();
+//    }
+//}
+
+/*Find the Largest Among Three Numbers*/
+
+namespace  lagestNo
 {
-    static void Main(string[]args)
+    class Program
 {
-        char ch;
-        Console.WriteLine("Enter any character: ");
-        ch = Convert.ToChar(Console.ReadLine());
-        // Condition for vowel checking
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
-        {
-            Console.WriteLine(ch + " is Vowel.");
+        static void Main(string[]args)
+{
+            int first, second, third;
+
+            Console.WriteLine("Enter the first number : ");
+            first = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number : ");
+            second = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the third number : ");
+            third = int.Parse(Console.ReadLine());
+            if (first > second)
+            {
+                if (first > third)
+                {
+                    Console.WriteLine("largest number : " + first);
+                }
+                else
+                {
+                    Console.WriteLine("largest number : " + third);
+                }
+            }
+            else
+            {
+                if (second > third)
+                {
+                    Console.WriteLine("largest number : " + second);
+                }
+                else
+                {
+                    Console.WriteLine("largest number : " + third);
+                }
+            }
         }
-        else if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-{
-            Console.WriteLine(ch + " is Consonant.");
-        }
-        Console.ReadLine();
     }
 }
+
 
